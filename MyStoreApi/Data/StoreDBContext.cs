@@ -57,6 +57,7 @@ namespace MyStoreApi.Data
                 entity.Property(e => e.CustomerId).HasColumnName("customer_id");
                 entity.Property(e => e.OrderDate).HasColumnName("order_date");
                 entity.Property(e => e.OrderTotal).HasColumnName("order_total");
+                entity.Property(e => e.Status).HasColumnName("status");
             });
 
             modelBuilder.Entity<CustomerAddress>(entity =>
